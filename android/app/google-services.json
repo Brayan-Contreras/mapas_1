@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "380356391955",
+    "project_id": "smarbar-71f68",
+    "storage_bucket": "smarbar-71f68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380356391955:android:f75b31b1679209b3e47be6",
+        "android_client_info": {
+          "package_name": "com.example.mapas_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQTZ8uCG-NTI0KE2biNN5db3xMHFOboC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
