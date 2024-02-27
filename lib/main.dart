@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:mapas_1/ui/auth/login_or_register.dart';
+import 'package:mapas_1/ui/pages/home/Nav_Bar.dart';
 import 'package:mapas_1/ui/pages/home/home_page.dart';
 import 'package:mapas_1/ui/pages/home/home_controller.dart';
 import 'package:provider/provider.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       //home: HomePage(),
-      home:HomePage(),
+      home:nav_bar(),
     );
   }
 }
@@ -71,7 +72,7 @@ class HomePage extends StatelessWidget {
           scrollGesturesEnabled: false,
           trafficEnabled: false,  //Habilita o deshabilita la capa de tráfico del mapa
           zoomControlsEnabled: true, //True si la vista de mapa debe mostrar controles de zoom. Esto incluye dos botones para acercar y alejar. El valor predeterminado es mostrar los controles de zoom.
-          mapType: MapType.satellite, // estilo del mapa
+          mapType: MapType.normal, // estilo del mapa
           compassEnabled: false, //quitar o poner la brujula
           markers:  controller.markers,
           onTap: controller.onTap,
