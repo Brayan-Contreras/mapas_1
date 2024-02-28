@@ -8,7 +8,7 @@ import 'package:mapas_1/ui/pages/home/home_controller.dart';
 import 'package:provider/provider.dart';
 //import 'package:mapas_1/Loginpage.dart';
 import 'package:mapas_1/ui/pages/home/login_page.dart';
-
+import 'package:mapas_1/ui/pages/favoritos.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       //home: HomePage(),
-      home:nav_bar(),
+      home: Scrollimage(),
     );
   }
 }
@@ -39,15 +39,12 @@ class MyApp extends StatelessWidget {
 // }
 
 class HomePage extends StatelessWidget {
-  
   HomePage({super.key});
   final _initialCameraPosition = CameraPosition(
     target:
         LatLng(7.37565, -72.64795), //latitud y longitud del centro de Pamplona
     zoom: 15,
   );
-
-  
 
   // @override
   // void initState() {
@@ -58,26 +55,30 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<HomeController>(
-      create: (_)=> HomeController(),
+      create: (_) => HomeController(),
       child: Scaffold(
         appBar: AppBar(),
-        body:Consumer<HomeController>(
-          builder:(_, controller, __) => GoogleMap(
-          // onMapCreated: _controller,
-          initialCameraPosition: _initialCameraPosition,
-          myLocationButtonEnabled: false, //boton de la posicion actual en el mapa 
-          myLocationEnabled:false, // localizacion
-          indoorViewEnabled: true, //Habilita o deshabilita la vista interior desde el mapa
-          mapToolbarEnabled: true, 
-          scrollGesturesEnabled: false,
-          trafficEnabled: false,  //Habilita o deshabilita la capa de tráfico del mapa
-          zoomControlsEnabled: true, //True si la vista de mapa debe mostrar controles de zoom. Esto incluye dos botones para acercar y alejar. El valor predeterminado es mostrar los controles de zoom.
-          mapType: MapType.normal, // estilo del mapa
-          compassEnabled: false, //quitar o poner la brujula
-          markers:  controller.markers,
-          onTap: controller.onTap,
+        body: Consumer<HomeController>(
+          builder: (_, controller, __) => GoogleMap(
+            // onMapCreated: _controller,
+            initialCameraPosition: _initialCameraPosition,
+            myLocationButtonEnabled:
+                false, //boton de la posicion actual en el mapa
+            myLocationEnabled: false, // localizacion
+            indoorViewEnabled:
+                true, //Habilita o deshabilita la vista interior desde el mapa
+            mapToolbarEnabled: true,
+            scrollGesturesEnabled: false,
+            trafficEnabled:
+                false, //Habilita o deshabilita la capa de tráfico del mapa
+            zoomControlsEnabled:
+                true, //True si la vista de mapa debe mostrar controles de zoom. Esto incluye dos botones para acercar y alejar. El valor predeterminado es mostrar los controles de zoom.
+            mapType: MapType.normal, // estilo del mapa
+            compassEnabled: false, //quitar o poner la brujula
+            markers: controller.markers,
+            onTap: controller.onTap,
           ),
-        ), 
+        ),
       ),
     );
   }
