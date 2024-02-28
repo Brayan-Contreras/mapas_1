@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       //home: HomePage(),
-      home: Scrollimage(),
+      home: nav_bar(),
     );
   }
 }

@@ -21,78 +21,103 @@ class _ScrollimageState extends State<Scrollimage> {
             Padding(padding: EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 4.0),
               child: Container(
               height: 200,
-              color: Color.fromARGB(255, 4, 190, 138),
-              
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                color: Colors.pink,
               ),
-            ),
-            Padding(padding: EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 4.0),
-              child: Container(
-              height: 200,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
+              child: Stack(
                 children: [
-                  Padding(
-                    padding: EdgeInsets.all(5.0),
-                    child: Container(
-                      height: 150,
-                      width: 200,
-                      color: Color.fromARGB(255, 8, 157, 243),
+                  Positioned.fill(
+                    child: Image.asset('assets/imagenes/uno.jpg',
+                    fit: BoxFit.cover,
                     ),
                   ),
-
-                  Padding(
-                    padding: EdgeInsets.all(5.0),
-                    child: Container(
-                      height: 150,
-                      width: 200,
-                      color: Color.fromARGB(255, 8, 157, 243),
-                    ),
-                  ),
-
-                  Padding(
-                    padding: EdgeInsets.all(5.0),
-                    child: Container(
-                      height: 150,
-                      width: 200,
-                      color: Color.fromARGB(255, 8, 157, 243),
-                    ),
-                  ),
-
-                  Padding(
-                    padding: EdgeInsets.all(5.0),
-                    child: Container(
-                      height: 150,
-                      width: 200,
-                      color: Color.fromARGB(255, 8, 157, 243),
-                    ),
-                  ),
-                ],
+                ],                
               ),
-
+              //color: Color.fromARGB(255, 4, 190, 138),
               ),
             ),
+
             Padding(padding: EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 4.0),
               child: Container(
               height: 200,
-              color: Color.fromARGB(255, 4, 190, 138),
-
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                color: Colors.pink,
+              ),
+              child: Stack(
+                children: [
+                  Positioned.fill(
+                    child: Image.asset('assets/imagenes/dos.jpg',
+                    fit: BoxFit.cover,
+                    ),
+                  ),
+                ],                
+              ),
+              //color: Color.fromARGB(255, 4, 190, 138),
               ),
             ),
+
             Padding(padding: EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 4.0),
               child: Container(
               height: 200,
-              color: Color.fromARGB(255, 4, 190, 138),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                color: Colors.pink,
+              ),
+              child: Stack(
+                children: [
+                  Positioned.fill(
+                    child: Image.asset('assets/imagenes/tres.jpg',
+                    fit: BoxFit.cover,
+                    ),
+                  ),
+                ],                
+              ),
+              //color: Color.fromARGB(255, 4, 190, 138),
+              ),
+            ),
 
+            Padding(padding: EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 4.0),
+              child: Container(
+              height: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                color: Colors.pink,
+              ),
+              child: Stack(
+                children: [
+                  Positioned.fill(
+                    child: Image.asset('assets/imagenes/cuatro.jpg',
+                    fit: BoxFit.cover,
+                    ),
+                  ),
+                ],                
+              ),
+              //color: Color.fromARGB(255, 4, 190, 138),
+              ),
+            ),
+
+            Padding(padding: EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 4.0),
+              child: Container(
+              height: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                color: Colors.pink,
+              ),
+              child: Stack(
+                children: [
+                  Positioned.fill(
+                    child: Image.asset('assets/imagenes/cinco.jpg',
+                    fit: BoxFit.cover,
+                    ),
+                  ),
+                ],                
+              ),
+              //color: Color.fromARGB(255, 4, 190, 138),
               ),
             ),
             
-            Padding(padding: EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 4.0),
-              child: Container(
-              height: 200,
-              color: Color.fromARGB(255, 4, 190, 138),
-
-              ),
-            ),
           ],
         ),
       ),

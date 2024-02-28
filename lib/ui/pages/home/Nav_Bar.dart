@@ -3,6 +3,8 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:mapas_1/main.dart';
 import 'package:mapas_1/ui/pages/home/login_page.dart';
 import 'package:mapas_1/ui/pages/home/register_page.dart';
+import 'package:mapas_1/ui/pages/favoritos.dart';
+
 class nav_bar extends StatefulWidget {
   const nav_bar({super.key});
 
@@ -14,8 +16,8 @@ class _nav_bar extends State<nav_bar> {
   int _selectedIndex = 0;
 
   final List<Widget> _pages = [
+    Scrollimage(),
     HomePage(),
-    
   ];
 
   @override
